@@ -32,6 +32,8 @@ ul {
   // justify-content: center;
   // align-items: center;
    min-height: 100vh;
+	 min-width: 100vw;
+	 padding: 0 1rem;
 }
 
 .flex {
@@ -213,4 +215,19 @@ ul {
 	to {
 		transform: translateX(calc(100vw + 100%));
 	}
+}
+
+@media screen and (max-width: 600) {
+	.container {
+		width: 440px;
+		.flex {
+			.cloud {
+		width: 200px;
+		height: 65px;
+		border-radius: 40px;
+		background-color: red;
+		}
+	}
+		}
+
 }

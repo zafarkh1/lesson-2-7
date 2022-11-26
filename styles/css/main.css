@@ -28,6 +28,8 @@ ul {
 
 .container {
   min-height: 100vh;
+  min-width: 100vw;
+  padding: 0 1rem;
 }
 
 .flex {
@@ -366,5 +368,16 @@ ul {
   to {
     -webkit-transform: translateX(calc(100vw + 100%));
             transform: translateX(calc(100vw + 100%));
+  }
+}
+@media screen and (max-width: 600) {
+  .container {
+    width: 440px;
+  }
+  .container .flex .cloud {
+    width: 200px;
+    height: 65px;
+    border-radius: 40px;
+    background-color: red;
   }
 }/*# sourceMappingURL=main.css.map */
